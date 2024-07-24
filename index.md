@@ -38,6 +38,5 @@ I have a strong foundation in various programming languages and tools essential 
 For any inquiries or opportunities, please reach out to me via email or connect with me on LinkedIn.
 
 - **Email**: [dennis.linnert@hotmail.com](mailto:dennis.linnert@hotmail.com)
-- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/dennis-linnert) (example link, please update with actual link)
-
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/dennis-linnert-7a99b620b/) 
 Thank you for visiting my portfolio! I look forward to connecting with you.
