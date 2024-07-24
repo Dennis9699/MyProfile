@@ -2,10 +2,13 @@
 ---
 
 @import "{{ site.theme }}";
+$grey-color: #999999; /* Example definition of grey color */
+
+/* Your custom styles below */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: $grey-color;
   background: #f4f4f4;
   margin: 0;
   padding: 0;
@@ -60,3 +63,4 @@ header a:hover {
   color: #77d7b9;
   font-weight: bold;
 }
+
