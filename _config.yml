@@ -10,4 +10,4 @@ markdown: kramdown
 
 # Custom CSS
 include:
-  - assets/css/style.css
+  - assets/style.css
