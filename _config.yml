@@ -1,13 +1,2 @@
 title: Dennis Linnert's Machine Learning Portfolio
 description: Showcase of my machine learning projects.
-theme: minima
-plugins:
-  - jekyll-remote-theme
-  - jekyll-paginate
-  - jekyll-sitemap
-remote_theme: jekyll/minima
-markdown: kramdown
-
-# Custom CSS
-include:
-  - assets/style.css
