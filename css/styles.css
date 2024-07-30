@@ -25,6 +25,7 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
+    margin-bottom: 20px; /* Add some margin for spacing */
 }
 
 #projects .project-image img {
@@ -35,6 +36,8 @@
 
 #projects .project-info {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 #projects .project-info h3 {
