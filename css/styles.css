@@ -12,14 +12,13 @@
 
 */
 #projects .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
     gap: 20px;
-    justify-content: space-evenly;
+    justify-items: center; /* Center the items horizontally */
 }
 
 #projects .project {
-    flex: 1 1 calc(45% - 20px);
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -63,8 +62,12 @@
 }
 
 @media (max-width: 768px) {
+    #projects .container {
+        grid-template-columns: 1fr; /* Stack the projects on smaller screens */
+    }
+
     #projects .project {
-        flex: 1 1 100%;
+        max-width: 100%;
     }
 }
 
