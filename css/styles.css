@@ -15,17 +15,20 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 #projects .project {
-    flex: 1 1 calc(50% - 20px);
+    width: 100%;
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    margin-bottom: 20px; /* Add some margin for spacing */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #projects .project-icon {
@@ -37,10 +40,6 @@
 
 #projects .project-info {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align text */
-    text-align: center;
 }
 
 #projects .project-info h3 {
@@ -61,6 +60,13 @@
 
 #projects .project-info a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    #projects .project {
+        width: 100%;
+        flex: 1 1 100%;
+    }
 }
 
 @media (max-width: 768px) {
