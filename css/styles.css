@@ -15,11 +15,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-around; /* Align items better */
 }
 
 #projects .project {
-    width: 100%;
+    flex: 1 1 calc(45% - 20px); /* Adjust width for better alignment */
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -60,13 +60,6 @@
 
 #projects .project-info a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    #projects .project {
-        width: 100%;
-        flex: 1 1 100%;
-    }
 }
 
 @media (max-width: 768px) {
