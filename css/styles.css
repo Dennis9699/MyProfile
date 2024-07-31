@@ -13,22 +13,21 @@
 */
 #projects .container {
     display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
-    justify-items: center !important;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+    justify-items: center; /* Center the items horizontally */
 }
 
 #projects .project {
-    max-width: 100% !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    background-color: #fff !important;
-    text-align: center !important;
+    max-width: 100%; /* Ensure projects take full width of the grid cell */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
 }
-
 
 #projects .project-icon {
     font-size: 50px;
