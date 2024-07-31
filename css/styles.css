@@ -15,11 +15,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around; /* Align items better */
+    justify-content: center; /* Center the items horizontally */
 }
 
 #projects .project {
-    flex: 1 1 calc(45% - 20px); /* Adjust width for better alignment */
+    width: 100%;
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -65,8 +65,10 @@
 @media (max-width: 768px) {
     #projects .project {
         flex: 1 1 100%;
+        max-width: 100%; /* Ensure full width on smaller screens */
     }
 }
+
 
 body {
     font-family: 'Lato', sans-serif;
