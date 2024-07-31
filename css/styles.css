@@ -19,17 +19,18 @@
 }
 
 #projects .project {
-    width: 100%;
-    max-width: 400px;
+    flex: 1 1 300px; /* Allow the project boxes to flex and set a minimum width */
+    max-width: 400px; /* Set a maximum width for the project boxes */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin: 10px; /* Add a margin to create space between the project boxes */
     text-align: center;
 }
+
 
 #projects .project-icon {
     font-size: 50px;
