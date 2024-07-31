@@ -12,21 +12,20 @@
 
 */
 #projects .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
     gap: 20px;
     justify-items: center; /* Center the items horizontally */
 }
 
 #projects .project {
-    max-width: 400px;
+    max-width: 100%; /* Ensure projects take full width of the grid cell */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    margin-bottom: 20px;
     text-align: center;
 }
 
