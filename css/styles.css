@@ -536,24 +536,18 @@ footer {
     margin-bottom: 50px;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .project {
     position: relative;
-    max-width: 400px;
-    margin: 15px;
+    max-width: 600px;
+    margin:0 auto 30px auto;
     overflow: hidden;
     background: #fff;
     border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 .project-icon {
@@ -562,9 +556,7 @@ footer {
     padding: 20px;
 }
 
-.project-info {
-    padding: 20px;
-}
+.project-info {position:absolute;top:50%;transform:translateY(-50%);margin-left:300px;padding:15px}
 
 .project-info h3 {
     font-size: 1.5em;
@@ -587,17 +579,6 @@ footer {
 
 .project-info a:hover {
     text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project {
-        max-width: 90%;
-    }
 }
 
 #skills {
