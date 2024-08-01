@@ -627,6 +627,38 @@ footer {
     font-size: 1.2em;
 }
 
+#skills {
+    padding-bottom: 50px; 
+}
+
+#stats {
+    padding: 50px 15px;
+    text-align: center;
+}
+
+#stats h2 {
+    color: #374054;
+    margin-bottom: 50px;
+}
+
+#stats ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+}
+
+#stats li {
+    display: inline-block;
+    margin: 7px;
+    padding: 5px 10px;
+    color: #374054;
+    background: #e4e4ea;
+    list-style: none;
+    cursor: default;
+    font-size: 1.2em;
+}
+
 #contact {
     padding: 50px 15px;
     background: #3498db;
