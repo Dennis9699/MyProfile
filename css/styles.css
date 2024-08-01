@@ -11,22 +11,30 @@
     Gulp and send to the /css folder which is then loaded on the page.
 
 */
+
+#projects {
+    padding: 50px 15px;
+    text-align: center;
+}
+
 #projects .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust columns based on available space */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
-    justify-items: center;
 }
 
 #projects .project {
-    max-width: 100%; /* Ensure projects take full width of the grid cell */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    text-align: center;
+    width: calc(50% - 20px); /* Two columns */
+    max-width: 300px; /* Control the max width of each project card */
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    text-align: center;
 }
 
 #projects .project-icon {
@@ -38,6 +46,7 @@
 
 #projects .project-info {
     padding: 20px;
+    flex-grow: 1;
 }
 
 #projects .project-info h3 {
@@ -61,15 +70,10 @@
 }
 
 @media (max-width: 768px) {
-    #projects .container {
-        grid-template-columns: 1fr; /* Stack the projects on smaller screens */
-    }
-
     #projects .project {
-        max-width: 100%;
+        width: calc(100% - 20px); /* Full width on smaller screens */
     }
 }
-
 
 
 body {
