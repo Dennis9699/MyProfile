@@ -12,10 +12,10 @@
 
 */
 #projects .container {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust columns based on available space */
     gap: 20px;
-    justify-items: center; /* Center the items horizontally */
+    justify-items: center;
 }
 
 #projects .project {
@@ -69,6 +69,7 @@
         max-width: 100%;
     }
 }
+
 
 
 body {
