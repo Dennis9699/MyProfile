@@ -12,77 +12,72 @@
 
 */
 
-#projects .container {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px;
-    justify-items: center; /* Center the items horizontally */
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 20px !important;
-    justify-items: center !important;
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
 }
 
-#projects .project {
-    max-width: 100%; /* Ensure projects take full width of the grid cell */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#projects h2 {
+    color: #374054;
+    margin-bottom: 50px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.project {
+    background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #fff;
-    text-align: center;
-    max-width: 100% !important;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
-    border-radius: 8px !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    background-color: #fff !important;
-    text-align: center !important;
+    padding: 20px;
+    max-width: 100%;
 }
 
-
-#projects .project-icon {
+.project-icon {
     font-size: 50px;
     color: #3498db;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
-#projects .project-info {
-    padding: 20px;
+.project-info {
+    flex-grow: 1;
 }
 
-#projects .project-info h3 {
+.project-info h3 {
     margin-top: 0;
 }
 
-#projects .project-info p {
+.project-info p {
     color: #74808a;
     margin: 0 0 15px 0;
     font-size: 0.9em;
 }
 
-#projects .project-info a {
+.project-info a {
     color: #3498db;
     text-decoration: none;
     font-weight: 700;
 }
 
-#projects .project-info a:hover {
+.project-info a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    #projects .container {
-        grid-template-columns: 1fr;
-    }
-
-    #projects .project {
-        max-width: 100%;
+    .projects-grid {
+        grid-template-columns: 1fr; /* Full width on smaller screens */
     }
 }
-
 
 body {
     font-family: 'Lato', sans-serif;
