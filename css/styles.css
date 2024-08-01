@@ -18,62 +18,70 @@
 }
 
 #projects .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#projects .project {
+#projects .heading {
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.project {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
-    width: calc(50% - 20px); /* Two columns */
-    max-width: 300px; /* Control the max width of each project card */
-    margin: 10px;
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    padding: 20px;
 }
 
-#projects .project-icon {
+.project-icon {
     font-size: 50px;
     color: #3498db;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
-#projects .project-info {
-    padding: 20px;
+.project-info {
     flex-grow: 1;
 }
 
-#projects .project-info h3 {
+.project-info h3 {
     margin-top: 0;
 }
 
-#projects .project-info p {
+.project-info p {
     color: #74808a;
     margin: 0 0 15px 0;
     font-size: 0.9em;
 }
 
-#projects .project-info a {
+.project-info a {
     color: #3498db;
     text-decoration: none;
     font-weight: 700;
 }
 
-#projects .project-info a:hover {
+.project-info a:hover {
     text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    #projects .project {
-        width: calc(100% - 20px); /* Full width on smaller screens */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Full width on smaller screens */
     }
 }
+
 
 
 body {
