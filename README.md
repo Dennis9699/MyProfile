@@ -2,7 +2,7 @@
 
 Welcome to my GitHub portfolio! 
 
-I am Dennis, a Master's student in Artificial Intelligence and Data Analytics, currently writing my Master's Thesis in Molecular Graph Neural Networks at Boehringer Ingelheim.
+I am Dennis - AI and Data Analytics enthusiast :) 
 
 Feel free to reach out to me - always looking for new challenges!
 
